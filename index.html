@@ -1,1 +1,85 @@
-lnlnta...
+<!--before you complain, my code may not be the best, but it works, so it's fine-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lnlnta</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div id="index">
+
+        <!--head-->
+        <img src="assets/lnlnta.png" alt="" width="128em" id="lnlnta_img">
+        <h1>lnlnta</h1>
+        
+        <!--options-->
+        <a onclick="show(about)"><h2>-about_me</h2></a>
+        <a onclick="show(games)"><h2>-my_games</h2></a>
+        <a onclick="show(projects)"><h2>-other_projects</h2></a>
+        <a onclick="show(contact)"><h2>-contact</h2></a>
+
+    </div>
+
+    <div class="changing" id="changing_about">
+        <h1>{about_me}</h1>
+
+        <p>
+            hi, i'm Lana (lnlnta), i'm an inde game dev from Spain.<br>
+            <br><br>
+            i like to make narrative games, with a strong focus on storytelling and art. i don't like<br>
+            complex mechanics on my games, i think they are, mostly, unnecesary for what i intend to do.<br>
+            <br><br>
+            currently, gamedev is my hobby, i don't really live for and by it (i wish), but i think that<br>
+            creating experiences that are able to get to people's hearts is what makes me live, and i'll<br>
+            fight for it.<br>
+            <br><br>
+            you don't really need to know anything more about me, so go check my games or projects.
+        </p>
+    </div>
+
+    <div class="changing" id="changing_games">
+        <h1>{my_games}</h1>
+
+        <p>there are not that much.</p>
+
+        <a class="game_link" target="_blank" href="https://helpingani.neocities.org/">Helping Ani-</a>
+    </div>
+
+    <div class="changing" id="changing_projects">
+        <h1>{other_projects}</h1>
+    </div>
+
+    <div class="changing" id="changing_contact">
+        <h1>{contact}</h1>
+    </div>
+
+    <script>
+
+        var about = document.getElementById("changing_about");
+        var games = document.getElementById("changing_games");
+        var projects = document.getElementById("changing_projects");
+        var contact = document.getElementById("changing_contact");
+
+        about.style.display = "none";
+        games.style.display = "none";
+        projects.style.display = "none";
+        contact.style.display = "none";
+
+        function show(element){
+            about.style.display = "none";
+            games.style.display = "none";
+            projects.style.display = "none";
+            contact.style.display = "none";
+            element.style.display = "block"
+        }
+
+    </script>
+
+</body>
+</html>

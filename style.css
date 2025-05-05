@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    padding: 10em;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+p{
+    font-size: 16px;
+}
+
+a{
+    color: white;
+    transition: color 0.2s ease;
+}
+
+a:hover{
+    color: red;
+    text-shadow: 0 0 3px red, 0 0 5px red;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+h1{
+    font-size: 40px;
+}
+
+#index{
+    float: left;
+}
+
+.changing{
+    display: flex;
+    float: right;
+    text-align: right;
+}
+
+#lnlnta_img{
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+}
+
+.game_link{
+    font-size: 20px;
+}
